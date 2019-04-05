@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass assets/style.scss dist/style.min.css --output-style compressed",
+    "prefix:css": "postcss -u autoprefixer -r dist/style.min.css",
+    "dev": "onchange 'assets/style.scss' -- npm run build:sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanHC/Portfolio-2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordanHC/Portfolio-2.0/issues"
+  },
+  "homepage": "https://github.com/JordanHC/Portfolio-2.0#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "node-sass": "^4.9.3",
+    "onchange": "^4.1.0",
+    "postcss-cli": "^6.0.0"
+  }
+}
